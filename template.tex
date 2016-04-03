@@ -1,0 +1,130 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[colorlinks]{hyperref}
+\usepackage{epstopdf}
+\hypersetup{
+  colorlinks = true,
+  linkcolor  = magenta,
+  citecolor  = magenta
+}
+\usepackage[all]{hypcap}
+\usepackage{listings}
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\title{Models for Sustainable \\Population Growth on Mars}
+\author{Chris Dunlap, Allen Koh, Matt May}
+\date{CSE 6730 Project 2 Checkpoint, Spring 2016}
+
+\begin{document}
+
+\begin{titlepage}
+  \maketitle
+  \thispagestyle{empty}
+\end{titlepage}
+
+\newpage
+  \tableofcontents
+  \thispagestyle{empty}
+\newpage
+
+\section{Problem Statement and Approach}
+\label{sec:problem}
+
+In the United States, the National Aeronautics and Space Administration (NASA)
+has announced its plan to send humans to Mars during the 2030s. This ambitious
+goal requires a variety of studies be conducted to effectively plan the
+endeavor. General habitation, food production, resource extraction,
+communication, spacecraft, and many other areas must be studied to determine
+their optimal configuration.
+
+For our second project, we propose a simulation of population growth dynamics on
+Mars, with the goal of determining an optimal strategy for sustainable
+population growth. Population growth models have been extensively studied in the
+literature \cite{clark1967population}, \cite{caswell2001matrix},
+\cite{meadows1992beyond}, \cite{boserup1983population},
+\cite{ehrlich1971impact} but generally only in the context of our own planet.
+
+\section{Simulation Description}
+\label{sec:simdescrip}
+
+We intend to model humans as consumer entities, and several
+types of resources such as food, water, and sanitation availability as resource
+entities. We intend to take a stochastic, discrete-time approach. As David
+Quammen notes \cite{quammen1996song}, there are four sources of uncertainty to
+which a population may be subject: demographic, environmental, natural
+catastrophes, and genetic. We will attempt to model several of these to
+provide the greatest realism possible.
+
+\section{Related Work}
+\label{sec:relatedwork}
+
+Often, natural populations without resource limitations exhibit exponential
+growth \cite{audesirk1996biology}. However, this type of rapid growth will
+likely be unsustainable under the extreme resource constraints of Mars.
+By considering several proposed habitation models for Mars, we hope to better
+understand the resource requirements of these approaches, and by that develop
+recommendations for sustainable growth.
+
+A stochastic model of population growth	during the Neolithic transition focused
+on foragers and farmers is presented by \cite{fedotov2008stochastic} where a
+two-population model is used. Foragers and farmers are modeled separately but
+maintain a relationship through total population density. Crop production is
+also modeled by a formula based on soil nutrients, production rate, and yield.
+The study discusses the change in food supply as population density increases
+and farm land degrades. Despite the model being developed for the Neolithic
+transition, the same concepts will apply to colonization in Mars as it is
+anticipated that farming will be an important part of our model.
+
+Another study by \cite{moore2001evaluating} introduces five models of human
+colonization.  The study focuses around expansion of colonies by modeling
+migration patterns of the population as well as mortality and fertility rates.
+The five models of colonization mentioned are the matrix model, beachhead
+model, string of pearls, outpost model and the pulse model. The paper
+concludes that regardless of population size, low fertility rates and/or high
+mortality rates will cause colonization to fail.
+
+\section{Simulation Architecture}
+\label{sec:architecture}
+
+\section{Progress To Date}
+\label{sec:progress}
+
+From a programming perspective, we plan to use the Python programming language,
+which is object-oriented, dynamically typed, and interpreted, making it an
+excellent choice for developing our simulation in an iterative manner.
+
+\section{Task Plan}
+\label{sec:taskplan}
+
+\section{Proposal}
+\label{sec:proposal}
+
+\clearpage
+\bibliography{template}{}
+\bibliographystyle{plain}
+\end{document}
