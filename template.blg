@@ -3,21 +3,19 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: template.aux
 The style file: plain.bst
 Database file #1: template.bib
-Warning--entry type for "faoProtein" isn't style-file defined
---line 19 of file template.bib
 Warning--empty journal in faoNutrition
 You've used 13 entries,
             2118 wiz_defined-function locations,
-            577 strings with 6036 characters,
-and the built_in function-call counts, 3939 in all, are:
-= -- 360
+            579 strings with 6106 characters,
+and the built_in function-call counts, 3959 in all, are:
+= -- 365
 > -- 226
 < -- 0
 + -- 91
 - -- 76
 * -- 273
-:= -- 701
-add.period$ -- 38
+:= -- 706
+add.period$ -- 40
 call.type$ -- 13
 change.case$ -- 70
 chr.to.int$ -- 0
@@ -25,17 +23,17 @@ cite$ -- 14
 duplicate$ -- 140
 empty$ -- 294
 format.name$ -- 76
-if$ -- 793
+if$ -- 798
 int.to.chr$ -- 0
 int.to.str$ -- 13
 missing$ -- 16
-newline$ -- 67
+newline$ -- 69
 num.names$ -- 26
-pop$ -- 85
+pop$ -- 84
 preamble$ -- 1
 purify$ -- 61
 quote$ -- 0
-skip$ -- 94
+skip$ -- 92
 stack$ -- 0
 substring$ -- 171
 swap$ -- 12
@@ -46,5 +44,5 @@ type$ -- 44
 warning$ -- 1
 while$ -- 33
 width$ -- 15
-write$ -- 135
-(There were 2 warnings)
+write$ -- 139
+(There was 1 warning)
