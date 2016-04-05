@@ -94,11 +94,39 @@ A stochastic model of population growth	during the Neolithic transition focused
 on foragers and farmers is presented by \cite{fedotov2008stochastic} where a
 two-population model is used. Foragers and farmers are modeled separately but
 maintain a relationship through total population density. Crop production is
-also modeled by a formula based on soil nutrients, production rate, and yield.
-The study discusses the change in food supply as population density increases
-and farm land degrades. Despite the model being developed for the Neolithic
-transition, the same concepts will apply to colonization in Mars as it is
-anticipated that farming will be an important part of our model.
+also modeled by a formula based on soil nutrients and production rate.  The
+density of soil nutrients is modeled as a partial differential equation, taking
+into account population size and crop production per unit of time.  The study
+discusses the change in food supply as population density increases and farm
+land degrades, but as mentioned earlier, there are underlying assumptions that
+do not apply to the case of colonizing Mars (such as erosion and flooding).
+Despite the model's end goal being different from ours, the modeling of crop
+production and soil nutrients appears transferrable to our application with
+the proper tailoring.
+
+The study in \cite{fedotov2008stochastic} established the use of phosphorus as
+the predominant indicator of nutrients in soil.  As such, the relationship of
+phosphorus excreted by human subjects as a function of protein intake
+\cite{pooOnYOu} can be applied to our problem to quantify
+the ability to reconstitute soil for farming by using human excrement.
+
+A study by the Food and Agriculture Organization of the United Nations (FAO)
+\cite{faoProtein} further adds value to our study by providing the
+amount of animal- and plant-based protein consumed by individuals from a
+multitude of contries.  Given our study's focus on NASA, figures from the United
+States can be gleaned.  Other information from the FAO \cite{faoNutrition}
+provides figures for crop efficiency, quantifying edible energy
+and protein per hectacre of farming land for a selection of key crops.
+
+Finally, a study related to hydroponics \cite{iHeartHydroponics} presents a
+final useful component to the modeling of food our study, where the effectiveness
+of hydroponic gardening is compared to that of conventional crop growing techniques
+by analyzing one of the crops found in \cite{faoNutrition}.
+In the end of the study, a multiplier is found that could be used to approximate
+the amount of food the Mars colony can grow using hydroponics when compared to
+the amount grown by conventional means.  In this light,
+it may be attractive for the Mars colony to use hydroponics in lieu of
+conventional farming landscapes.
 
 Another study by \cite{moore2001evaluating} introduces five models of human
 colonization.  The study focuses around expansion of colonies by modeling
