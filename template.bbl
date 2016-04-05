@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{audesirk1996biology}
 Teresa Audesirk, Gerald Audesirk, and Bruce~E Byers.
@@ -20,6 +20,13 @@ Colin Clark et~al.
 \newblock {\em Population growth and land use}.
 \newblock London: MacMillan., 1967.
 
+\bibitem{iHeartHydroponics}
+Ricardo~M. Correa, Jose Eduardo~B. Pinto, Cesar Augusto Brasil~Pereira Pinto,
+  Valdemar Faquin, Erika~S. Reis, Aline~B. Monteiro, and Willian~E. Dyer.
+\newblock A comparison of potato seed tuber yields in beds, pots, and
+  hydroponic systems.
+\newblock {\em Scientia Horticulturae}, 116(1):17--20, 2008.
+
 \bibitem{ehrlich1971impact}
 Paul~R Ehrlich, John~P Holdren, et~al.
 \newblock Impact of population growth.
@@ -31,10 +38,24 @@ Sergei Fedotov, David Moss, and Daniel Campos.
   settlements during the neolithic transition.
 \newblock {\em Physical Review E}, 78(2):026107, 2008.
 
+\bibitem{faoNutrition}
+Food and Agriculture~Organization of~the United Nations~(FAO).
+\newblock Roots, tubers, plantains and bananas in human nutrition.
+\newblock 1990.
+
+\bibitem{faoProtein}
+Food and Agriculture~Organization of~the United Nations~(FAO).
+\newblock Food balance sheets, 2011.
+
 \bibitem{meadows1992beyond}
 Donella~H Meadows, Dennis~L Meadows, J{\o}rgen Randers, et~al.
 \newblock {\em Beyond the limits: global collapse or a sustainable future.}
 \newblock Earthscan Publications Ltd., 1992.
+
+\bibitem{pooOnYOu}
+James~R. Mihelcic, Lauren~M Fry, and Ryan Shaw.
+\newblock Global potential of phosphorus recovery from human urine and feces.
+\newblock {\em Chemosphere}, 84, 2011.
 
 \bibitem{moore2001evaluating}
 John~H Moore.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 APR 2016 17:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  4 APR 2016 19:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -564,27 +564,32 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.53 \newpage
-              [1] [2] [3] (./template.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
- [4
+              [1] [2] [3] [4] (./template.bbl
+Underfull \hbox (badness 1052) in paragraph at lines 24--29
+\T1/cmr/m/n/12 Pinto, Valde-mar Faquin, Erika S. Reis, Aline B. Mon-teiro, and
+ []
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
+[5
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 6DE760864F949A9C1F2081D49504C002;365.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
  ) 
 Here is how much of TeX's memory you used:
- 7599 strings out of 493089
- 108382 string characters out of 6134842
+ 7609 strings out of 493089
+ 108516 string characters out of 6134842
  223933 words of memory out of 5000000
- 10978 multiletter control sequences out of 15000+600000
+ 10982 multiletter control sequences out of 15000+600000
  10160 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,40p,234b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,7n,40p,234b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></
 usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></us
@@ -592,10 +597,10 @@ r/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/
 local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on template.pdf (5 pages, 117589 bytes).
+Output written on template.pdf (7 pages, 121823 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 23 named destinations out of 1000 (max. 500000)
+ 135 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
  57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
