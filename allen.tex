@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[colorlinks]{hyperref}
+\usepackage{epstopdf}
+\hypersetup{
+  colorlinks = true,
+  linkcolor  = magenta,
+  citecolor  = magenta
+}
+\usepackage[all]{hypcap}
+\usepackage{listings}
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\title{Models for Sustainable \\Population Growth on Mars}
+\author{Chris Dunlap, Allen Koh, Matt May}
+\date{CSE 6730 Project 2 Checkpoint, Spring 2016}
+
+\begin{document}
+
+\begin{titlepage}
+  \maketitle
+  \thispagestyle{empty}
+\end{titlepage}
+
+\newpage
+  \tableofcontents
+  \thispagestyle{empty}
+\newpage
+
+\section{Problem Statement and Approach}
+
+There has been previous literature on modeling population growth with limited resources.  The most popular model used for population growth is the matrix model.  Miller et al describes using a Leslie matrix model to estimate the annual increase of a gray wolf population \cite{miller2002density}.  This model takes inputs of survival and fertility rates and is modified for an environment with limited resources.  A simple density dependent matrix model is used based on a discrete time scalar logistic equation with a defined carrying capacity factor.  The estimates for the projection matrix including survival rates, fertility rates, litter size, and carrying capacity, were taken from field studies of real populations.  Aikio \& Pakkasmaa present additional characteristics to model population growth by linking growth and reproduction rates with an individual's biomass and the number of individuals they interact with \cite{aikio2003relatedness}.  Clark \& Innis uses a model that integrates energy and protein relationships for jack rabbit population growth where the limited resource is food \cite{clark1982forage}.  Food intake is controlled by energy balance and gut fill while foraging selection is used to balance nutrients.  The growth and reproduction rates have energy and protein requirements while mortality rates are influenced by predation from coyotes and natural causes.  Peterson et al also introduces a matrix model structure around population dynamics of trees in a forest and mentions the east of computer simulation as a factor behind using the matrix model structure \cite{peterson2014modeling}.  The forest matrix model predicts population dynamics using vectors of live trees as well as growth and recruitment matrices.
+
+\clearpage
+\bibliography{template}{}
+\bibliographystyle{plain}
+\end{document}
