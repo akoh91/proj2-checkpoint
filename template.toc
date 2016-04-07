@@ -4,7 +4,9 @@
 \contentsline {subsection}{\numberline {3.1}Population Growth Models}{2}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Food Production}{3}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Mars-Specific Habitation Models}{4}{subsection.3.3}
-\contentsline {section}{\numberline {4}Simulation Architecture}{5}{section.4}
-\contentsline {section}{\numberline {5}Progress To Date}{5}{section.5}
-\contentsline {section}{\numberline {6}Task Plan}{5}{section.6}
-\contentsline {section}{\numberline {7}Proposal}{5}{section.7}
+\contentsline {subsubsection}{\numberline {3.3.1}Oxygen Generation}{4}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Power Generation}{5}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Space Agriculture}{5}{subsubsection.3.3.3}
+\contentsline {section}{\numberline {4}Simulation Architecture}{6}{section.4}
+\contentsline {section}{\numberline {5}Progress To Date}{6}{section.5}
+\contentsline {section}{\numberline {6}Task Plan}{6}{section.6}

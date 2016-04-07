@@ -166,12 +166,13 @@ farming techniques.
 
 \subsection{Mars-Specific Habitation Models}
 
+\subsubsection{Oxygen Generation}
+
 The distance from Earth to Mars varies between roughly 58 million and 400
 million km. Because of the great distance, resupply capbilities for human
 missions to Mars are virtually nonexistent. Due to this challenge, innovative
-approaches must be taken to regenerate necessary resources in-situ.
-
-The Mars Design Reference Architecture 5.0 \cite{drake2010human} proposes
+approaches must be taken to regenerate necessary resources in-situ. To this end,
+the Mars Design Reference Architecture 5.0 \cite{drake2010human} proposes
 the use of an ``In-Situ Resource Utilization System'' (ISRU) that converts Mars
 atmosphere into oxygen for both propellant and life support purposes. The plant
 operates by using electrolyzers that convert carbon dioxide into oxygen and
@@ -180,23 +181,35 @@ Earth and reacted with Mars-produced oxygen to generate water. Furthermore,
 carbon dioxide, nitrogen, and argon that are extracted from the atmosphere of
 Mars can be employed as a buffer gas for crew breathing.
 
+\subsubsection{Power Generation}
+
 The lack of known resources on Mars that can be mined for power generation
 requires either a solar-based power source or a power source transported from
 Earth \cite{hoffman1997human}. As noted, Mars is roughly 50\% farther from the
 Sun on average relative to the Earth, so only around half of the solar
-radiation that Earth experiences actually reaches Mars.
+radiation that Earth experiences actually reaches Mars. Thus, the Design
+Reference Architecture \cite{drake2010human} proposes the use of a nuclear
+fission-based reactor. Of the power sources which can be transported from
+Earth, a nuclear power source is the only known option that concentrates
+sufficient energy in a reasonable mass and volume \cite{hoffman1997human}.
+The reactor operates at a low temperature, allowing stainless steel (which is
+compatible with Mars' atmosphere) to be used for reactor components. The ISRU
+plant mentioned previously is a predominant consumer of power (consuming 25 kWe
+when operating continuously).
 
-In terms of power systems, the Design Reference Architecture
-\cite{drake2010human} proposes the use of a nuclear fission-based reactor. Of
-the power sources which can be transported from Earth, a nuclear power source
-is the only known option that concentrates sufficient energy in a reasonable
-mass and volume \cite{hoffman1997human}. The reactor operates at a low
-temperature, allowing stainless steel (which is compatible with Mars'
-atmosphere) to be used for reactor components. The ISRU plant mentioned
-previously is a predominant consumer of power (consuming 25 kWe when operating
-continuously).
+\subsubsection{Space Agriculture}
 
+In terms of space agriculture, composting microbial technology has been studied
+specifically in the context of habitation on Mars \cite{kanazawa2008space}.
+This technology can be implemented as a subsystem that oxidizes inedible
+biomass/wastes, converting them to fertilizer. High quality compost is an
+important part of a regenerative food production system, but as noted, must
+be implemented carefully to avoid the spread of pathogenic bacteria.
 
+In another study \cite{katayama2005entomophagy}, a menu for a sustainable human
+diet on Mars was developed, concluding that a combination of rice, soybeans,
+sweet potatos, green-yellow vegetables, silkworm pupa, and loach would fulfill
+human nutritional requirements.
 
 \section{Simulation Architecture}
 \label{sec:architecture}
@@ -211,8 +224,13 @@ excellent choice for developing our simulation in an iterative manner.
 \section{Task Plan}
 \label{sec:taskplan}
 
-\section{Proposal}
-\label{sec:proposal}
+Going forward, tasks for for our team will be divided as follows:
+
+\begin{itemize}
+  \item Chris will be focusing on developing
+  \item Allen will focus on
+  \item Matt's focus is 
+\end{itemize}
 
 \clearpage
 \bibliography{template}{}

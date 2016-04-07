@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  7 APR 2016 12:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  7 APR 2016 12:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -571,7 +571,17 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.53 \newpage
-              [1] [2] [3] [4] [5] (./template.bbl
+              [1] [2] [3] [4] [5]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 230.
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 230.
+ [6]
+(./template.bbl
 Underfull \hbox (badness 1052) in paragraph at lines 36--41
 \T1/cmr/m/n/12 Pinto, Valde-mar Faquin, Erika S. Reis, Aline B. Mon-teiro, and
  []
@@ -579,41 +589,42 @@ Underfull \hbox (badness 1052) in paragraph at lines 36--41
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 66.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [6
+) [7
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 220.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 238.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 238.
 
 (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 220.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 220.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 238.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 238.
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: DC24F1AD84FD22DF5CDD1664C65B17DB;583.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 220.
+(rerunfilecheck)             Checksum: 1C984F0EE5E92575822C341CC6F40CBC;769.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 238.
  ) 
 Here is how much of TeX's memory you used:
- 7666 strings out of 493089
- 109676 string characters out of 6134842
+ 7691 strings out of 493089
+ 110163 string characters out of 6134842
  224933 words of memory out of 5000000
- 11018 multiletter control sequences out of 15000+600000
+ 11035 multiletter control sequences out of 15000+600000
  13686 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,40p,234b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on template.pdf (8 pages, 173684 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on template.pdf (9 pages, 185812 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 204 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
