@@ -52,6 +52,7 @@
   \thispagestyle{empty}
 \newpage
 
+% The problem and questions you are addressing and approach you will use
 \section{Problem Statement and Approach}
 \label{sec:problem}
 
@@ -72,10 +73,11 @@ literature \cite{clark1967population}, \cite{caswell2001matrix},
 Often, natural populations without resource limitations exhibit exponential
 growth \cite{audesirk1996biology}. However, this type of rapid growth will
 likely be unsustainable under the extreme resource constraints of Mars.
-By considering several proposed habitation models for Mars, we hope to better
-understand the resource requirements of these approaches, and by that develop
-recommendations for sustainable growth.
+By considering several proposed habitation models for Mars, and modeling the
+effects of uncertainty, we hope to better understand the viability of these
+approaches, and by that develop recommendations for sustainable growth.
 
+% A description of the simulation you are developing
 \section{Simulation Description}
 \label{sec:simdescrip}
 
@@ -86,6 +88,11 @@ Quammen notes \cite{quammen1996song}, there are four sources of uncertainty to
 which a population may be subject: demographic, environmental, natural
 catastrophes, and genetic. We will attempt to model several of these to
 provide the greatest realism possible.
+
+\subsection{Inputs}
+\subsection{Outputs}
+\subsection{Content}
+\subsection{Assumptions \& Simplifications}
 
 \section{Related Work}
 \label{sec:relatedwork}
@@ -197,18 +204,39 @@ compatible with Mars' atmosphere) to be used for reactor components. The ISRU
 plant mentioned previously is a predominant consumer of power (consuming 25 kWe
 when operating continuously).
 
-\subsubsection{Space Agriculture}
+\subsubsection{Space Agriculture and Waste Processing}
 
-In terms of space agriculture, composting microbial technology has been studied
-specifically in the context of habitation on Mars \cite{kanazawa2008space}.
-This technology can be implemented as a subsystem that oxidizes inedible
-biomass/wastes, converting them to fertilizer. High quality compost is an
-important part of a regenerative food production system, but as noted, must
-be implemented carefully to avoid the spread of pathogenic bacteria.
+The daily resource requirements of humans have been studied through computer
+simulation \cite{rummel1987modular}. Simulations indicate that a human requires
+(per day) 855g of food inputs, 4577g of drinking/food preparation water, 128g
+of water in food, 18,000g of wash/flush water, and 804g of oxygen for food
+metabolism. In terms of outputs per day, they are separated into three
+categories: water, solids, and carbon dioxide. Humans produce 3025g of water
+in urine and feces, 406g of metabolic water (vapor), 1680g of perspiration
+water (vapor), and 18,000g of wash/flush water. 161g of solids in the form of
+feces, urine, and sweat solids are produced. 1092g of carbon dioxide from
+food metabolization is produced. Over the course of a year, this means that
+the average human is consuming roughly ``three times his body weight in food,
+four times his weight in oxygen, and eight times his weight in drinking water.''
+\cite{modell1980rationale}. Thus, bioregenerative systems are essential to
+sustainable long-term habitation on Mars.
+
+To enable space agriculture, hyper-thermophilic aerobic composting bacteria
+have been studied specifically in the context of habitation on Mars
+\cite{kanazawa2008space}. This technology can be implemented as a subsystem
+that oxidizes inedible biomass/wastes, converting them to fertilizer. High
+quality compost is an important part of a regenerative food production system,
+but as noted, must be implemented carefully to avoid the spread of pathogenic
+bacteria. A ``marsh-based waste processing system'' \cite{nelson1992biosphere}
+has also been studied which exploits the natural ability of aquatic plant/
+microbial associations to perform processing of waste. These systems metabolize,
+or concentrate, pollutants while generating useful biomass growth. Furthermore,
+aquatic plants can be used as purified water sources by condensing moisture
+evapotranspired from plant leaves.
 
 In another study \cite{katayama2005entomophagy}, a menu for a sustainable human
 diet on Mars was developed, concluding that a combination of rice, soybeans,
-sweet potatos, green-yellow vegetables, silkworm pupa, and loach would fulfill
+sweet potatoes, green-yellow vegetables, silkworm pupa, and loach would fulfill
 human nutritional requirements.
 
 \section{Simulation Architecture}
@@ -229,7 +257,7 @@ Going forward, tasks for for our team will be divided as follows:
 \begin{itemize}
   \item Chris will be focusing on developing
   \item Allen will focus on
-  \item Matt's focus is 
+  \item Matt's focus is
 \end{itemize}
 
 \clearpage

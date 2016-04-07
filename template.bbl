@@ -100,10 +100,21 @@ David~H Miller, Al~L Jensen, and James~H Hammill.
 \newblock Density dependent matrix model for gray wolf population projection.
 \newblock {\em Ecological Modelling}, 151(2):271--278, 2002.
 
+\bibitem{modell1980rationale}
+M~Modell and JM~Spurlock.
+\newblock Rationale for evaluating a closed food chain for space habitats.
+\newblock 1980.
+
 \bibitem{moore2001evaluating}
 John~H Moore.
 \newblock Evaluating five models of human colonization.
 \newblock {\em American Anthropologist}, 103(2):395--408, 2001.
+
+\bibitem{nelson1992biosphere}
+Mark Nelson, John~P Allen, and William~F Dempster.
+\newblock Biosphere 2: a prototype project for a permanent and evolving life
+  system for mars base.
+\newblock {\em Advances in Space Research}, 12(5):211--217, 1992.
 
 \bibitem{peterson2014modeling}
 Randy~L Peterson, Jingjing Liang, and Tara~M Barrett.
@@ -115,5 +126,10 @@ Randy~L Peterson, Jingjing Liang, and Tara~M Barrett.
 David Quammen.
 \newblock The song of the dodo: island biogeography in an age of extinction.
 \newblock {\em Hutchinson, London}, 1996.
+
+\bibitem{rummel1987modular}
+John~D Rummel and Tyler Volk.
+\newblock A modular blss simulation model.
+\newblock {\em Advances in space research}, 7(4):59--67, 1987.
 
 \end{thebibliography}
