@@ -77,24 +77,6 @@ By considering several proposed habitation models for Mars, and modeling the
 effects of uncertainty, we hope to better understand the viability of these
 approaches, and by that develop recommendations for sustainable growth.
 
-% A description of the simulation you are developing
-\section{Simulation Description}
-\label{sec:simdescrip}
-
-We intend to model humans as consumer entities, and several
-types of resources such as food, water, and sanitation availability as resource
-entities. We intend to take a stochastic, discrete-time approach. As David
-Quammen notes \cite{quammen1996song}, there are four sources of uncertainty to
-which a population may be subject: demographic, environmental, natural
-catastrophes, and genetic. We will attempt to model several of these to
-provide the greatest realism possible.
-
-\subsection{Inputs}
-\subsection{Outputs}
-\subsection{Parameters}
-\subsection{Content}
-\subsection{Assumptions \& Simplifications}
-
 \section{Related Work}
 \label{sec:relatedwork}
 
@@ -240,6 +222,45 @@ diet on Mars was developed, concluding that a combination of rice, soybeans,
 sweet potatoes, green-yellow vegetables, silkworm pupa, and loach would fulfill
 human nutritional requirements.
 
+% A description of the simulation you are developing
+\section{Simulation Description}
+\label{sec:simdescrip}
+
+In population dynamics, birth and death rates are often density-dependent
+\cite{guckenheimer1977dynamics}, in that the birth rate eventually decreases as
+population size increases, and the death rate also begins to increase with
+population size due to resource unavailability, environmental deterioration, or
+both. The \textit{logistic growth model} is often used for modeling population
+growth that does not grow without bound. In continuous time, the logistic growth
+equation takes the form:
+
+\begin{equation}
+  \frac{dN}{dt} = r\left(1-\frac{N}{K}\right)N
+\end{equation}
+
+where $r$ is the intrinsic growth rate, which can be understood as the birth
+rate minus the death rate, and $K$ is the carrying capacity, or the maximum
+population a species can sustain indefinitely. For purposes of our simulation,
+we introduce stochasticity to this deterministic framework through the following
+procedure previously noted in \cite{fugotakasu}.
+
+% procedure
+
+We intend to model humans as consumer entities, and several
+types of resources such as food, water, and sanitation availability as resource
+entities. We intend to take a stochastic, discrete-time approach. As David
+Quammen notes \cite{quammen1996song}, there are four sources of uncertainty to
+which a population may be subject: demographic, environmental, natural
+catastrophes, and genetic. We will attempt to model several of these to
+provide the greatest realism possible.
+
+\subsection{Inputs}
+
+\subsection{Outputs}
+\subsection{Parameters}
+\subsection{Content}
+\subsection{Assumptions \& Simplifications}
+
 % A block diagram (architecture) showing the major pieces of software that
 % will be developed,
 \section{Simulation Architecture}
@@ -254,7 +275,7 @@ which is object-oriented, dynamically typed, and interpreted, making it an
 excellent choice for developing our simulation in an iterative manner.
 
 % A list of tasks and individuals assigned to these tasks in order to
-% complete the project. 
+% complete the project.
 \section{Task Plan}
 \label{sec:taskplan}
 

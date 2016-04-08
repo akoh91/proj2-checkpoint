@@ -66,6 +66,11 @@ Food and Agriculture~Organization of~the United Nations~(FAO).
 \newblock \url{http://faostat.fao.org/site/368/default.aspx}, 2011.
 \newblock Accessed: 2016-04-04.
 
+\bibitem{guckenheimer1977dynamics}
+John Guckenheimer, George Oster, and Ai~Ipaktchi.
+\newblock The dynamics of density dependent population models.
+\newblock {\em Journal of Mathematical Biology}, 4(2):101--147, 1977.
+
 \bibitem{hoffman1997human}
 Stephen~J Hoffman and David~I Kaplan.
 \newblock Human exploration of mars: the reference mission of the nasa mars
@@ -131,5 +136,13 @@ David Quammen.
 John~D Rummel and Tyler Volk.
 \newblock A modular blss simulation model.
 \newblock {\em Advances in space research}, 7(4):59--67, 1987.
+
+\bibitem{fugotakasu}
+Fugo Takasu.
+\newblock Logistic growth models.
+\newblock
+  \url{http://gi.ics.nara-wu.ac.jp/~takasu/lecture/graduate_course/L9_logistic-growth.pdf},
+  2009.
+\newblock Accessed: 2016-04-07.
 
 \end{thebibliography}
