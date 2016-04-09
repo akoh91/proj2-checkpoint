@@ -1,7 +1,16 @@
 \BOOKMARK [1][-]{section.1}{Problem Statement and Approach}{}% 1
-\BOOKMARK [1][-]{section.2}{Simulation Description}{}% 2
-\BOOKMARK [1][-]{section.3}{Related Work}{}% 3
-\BOOKMARK [1][-]{section.4}{Simulation Architecture}{}% 4
-\BOOKMARK [1][-]{section.5}{Progress To Date}{}% 5
-\BOOKMARK [1][-]{section.6}{Task Plan}{}% 6
-\BOOKMARK [1][-]{section.7}{Proposal}{}% 7
+\BOOKMARK [1][-]{section.2}{Related Work}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Population Growth Models}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Food Production}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Mars-Specific Habitation Models}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Oxygen Generation}{subsection.2.3}% 6
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Power Generation}{subsection.2.3}% 7
+\BOOKMARK [3][-]{subsubsection.2.3.3}{Space Agriculture and Waste Processing}{subsection.2.3}% 8
+\BOOKMARK [1][-]{section.3}{Simulation Description}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Inputs}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Outputs}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Parameters}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.4}{Assumptions \046 Simplifications}{section.3}% 13
+\BOOKMARK [1][-]{section.4}{Simulation Architecture}{}% 14
+\BOOKMARK [1][-]{section.5}{Progress To Date}{}% 15
+\BOOKMARK [1][-]{section.6}{Task Plan}{}% 16

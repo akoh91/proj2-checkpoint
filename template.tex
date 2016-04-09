@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{multirow}
+\usepackage{scrextend}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage[colorlinks]{hyperref}
 \usepackage{epstopdf}
@@ -52,6 +53,7 @@
   \thispagestyle{empty}
 \newpage
 
+% The problem and questions you are addressing and approach you will use
 \section{Problem Statement and Approach}
 \label{sec:problem}
 
@@ -69,76 +71,220 @@ literature \cite{clark1967population}, \cite{caswell2001matrix},
 \cite{meadows1992beyond}, \cite{boserup1983population},
 \cite{ehrlich1971impact} but generally only in the context of our own planet.
 
-\section{Simulation Description}
-\label{sec:simdescrip}
-
-We intend to model humans as consumer entities, and several
-types of resources such as food, water, and sanitation availability as resource
-entities. We intend to take a stochastic, discrete-time approach. As David
-Quammen notes \cite{quammen1996song}, there are four sources of uncertainty to
-which a population may be subject: demographic, environmental, natural
-catastrophes, and genetic. We will attempt to model several of these to
-provide the greatest realism possible.
+Often, natural populations without resource limitations exhibit exponential
+growth \cite{audesirk1996biology}. However, this type of rapid growth will
+likely be unsustainable under the extreme resource constraints of Mars.
+By considering several proposed habitation models for Mars, and modeling the
+effects of uncertainty, we hope to better understand the viability of these
+approaches, and by that develop recommendations for sustainable growth.
 
 \section{Related Work}
 \label{sec:relatedwork}
 
-Often, natural populations without resource limitations exhibit exponential
-growth \cite{audesirk1996biology}. However, this type of rapid growth will
-likely be unsustainable under the extreme resource constraints of Mars.
-By considering several proposed habitation models for Mars, we hope to better
-understand the resource requirements of these approaches, and by that develop
-recommendations for sustainable growth.
+\subsection{Population Growth Models}
 
-A stochastic model of population growth	during the Neolithic transition focused
-on foragers and farmers is presented by \cite{fedotov2008stochastic} where a
-two-population model is used. Foragers and farmers are modeled separately but
-maintain a relationship through total population density. Crop production is
-also modeled by a formula based on soil nutrients and production rate.  The
-density of soil nutrients is modeled as a partial differential equation, taking
-into account population size and crop production per unit of time.  The study
-discusses the change in food supply as population density increases and farm
-land degrades, but as mentioned earlier, there are underlying assumptions that
-do not apply to the case of colonizing Mars (such as erosion and flooding).
-Despite the model's end goal being different from ours, the modeling of crop
-production and soil nutrients appears transferrable to our application with
-the proper tailoring.
-
-The study in \cite{fedotov2008stochastic} established the use of phosphorus as
-the predominant indicator of nutrients in soil.  As such, the relationship of
-phosphorus excreted by human subjects as a function of protein intake
-\cite{pooOnYOu} can be applied to our problem to quantify
-the ability to reconstitute soil for farming by using human excrement.
-
-A study by the Food and Agriculture Organization of the United Nations (FAO)
-\cite{faoProtein} further adds value to our study by providing the
-amount of animal- and plant-based protein consumed by individuals from a
-multitude of contries.  Given our study's focus on NASA, figures from the United
-States can be gleaned.  Other information from the FAO \cite{faoNutrition}
-provides figures for crop efficiency, quantifying edible energy
-and protein per hectacre of farming land for a selection of key crops.
-
-Finally, a study related to hydroponics \cite{iHeartHydroponics} presents a
-final useful component to the modeling of food our study, where the effectiveness
-of hydroponic gardening is compared to that of conventional crop growing techniques
-by analyzing one of the crops found in \cite{faoNutrition}.
-In the end of the study, a multiplier is found that could be used to approximate
-the amount of food the Mars colony can grow using hydroponics when compared to
-the amount grown by conventional means.  In this light,
-it may be attractive for the Mars colony to use hydroponics in lieu of
-conventional farming landscapes.
-
-Another study by \cite{moore2001evaluating} introduces five models of human
-colonization.  The study focuses around expansion of colonies by modeling
+Moore \cite{moore2001evaluating} introduces five models of human
+colonization. The study focuses around expansion of colonies by modeling
 migration patterns of the population as well as mortality and fertility rates.
 The five models of colonization mentioned are the matrix model, beachhead
 model, string of pearls, outpost model and the pulse model. The paper
 concludes that regardless of population size, low fertility rates and/or high
 mortality rates will cause colonization to fail.
 
+There has been previous literature on modeling population growth with limited
+resources. The most popular model used for population growth is the matrix
+model.  Miller et al \cite{miller2002density} use a Leslie matrix
+model to estimate the annual increase of a gray wolf population. This model
+takes inputs of survival and fertility rates and is modified for an environment
+with limited resources. A simple density-dependent matrix model is used based
+on a discrete time scalar logistic equation with a defined carrying capacity
+factor. The estimates for the projection matrix, including survival rates,
+fertility rates, litter size, and carrying capacity, were taken from field
+studies of real populations. Aikio \& Pakkasmaa present additional
+characteristics to model population growth by linking growth and reproduction
+rates with an individual's biomass and the number of individuals they
+interact with \cite{aikio2003relatedness}. Clark \& Innis uses a model that
+integrates energy and protein relationships for jack rabbit population growth
+where the limited resource is food \cite{clark1982forage}. Food intake is
+controlled by energy balance and gut fill while foraging selection is used to
+balance nutrients. The growth and reproduction rates have energy and protein
+requirements while mortality rates are influenced by predation from coyotes and
+natural causes.  Peterson et al \cite{peterson2014modeling} also introduces a
+matrix model structure around population dynamics of trees in a forest and
+mentions the ease of computer simulation as a factor behind using the matrix
+model structure. The forest matrix model predicts population dynamics using
+vectors of live trees as well as growth and recruitment matrices.
+
+\subsection{Food Production}
+
+A stochastic model of population growth	during the Neolithic transition focused
+on foragers and farmers is presented by Fedotov \cite{fedotov2008stochastic}. A
+two-population model is used in which foragers and farmers are modeled
+separately but maintain a relationship through total population density.
+Crop production is also modeled by a formula based on soil nutrients and
+production rate. The density of soil nutrients is modeled as a partial
+differential equation, taking into account population size and crop production
+per unit of time. The study discusses the change in food supply as population
+density increases and farm land degrades; however, there are underlying
+assumptions that do likely not apply to the case of colonizing Mars (such as
+erosion and flooding). Despite the model's objectives being different from our
+own, the modeling of crop production and soil nutrients appears transferrable
+to our application with the proper tailoring.
+
+Fedotov's study \cite{fedotov2008stochastic} suggests the use of phosphorus as
+the predominant indicator of nutrients in soil. As such, the relationship of
+phosphorus excreted by human subjects as a function of protein intake
+\cite{pooOnYOu} can be applied to our problem to quantify the ability to
+reconstitute soil for farming by using human excrement.
+
+A study by the Food and Agriculture Organization of the United Nations (FAO)
+\cite{faoProtein} further adds value to our study by providing the
+amount of animal and plant-based protein consumed by individuals from a
+multitude of contries. Given our study's focus on NASA, figures from the United
+States can be gleaned. Other information from the FAO \cite{faoNutrition}
+provides figures for crop efficiency, quantifying edible energy
+and protein per hectare of farming land for a selection of key crops.
+
+Finally, a study related to hydroponics \cite{iHeartHydroponics} presents a
+final useful component to the modeling of food our study, where the
+effectiveness of hydroponic gardening is compared to that of conventional crop
+growing techniques by analyzing one of the crops found in \cite{faoNutrition}.
+At the conclusion of the study, a multiplier is noted that could be used to
+approximate the amount of food the Mars colony can grow using hydroponics when
+compared to the amount grown by conventional means. In this light, it may be
+attractive for the Mars colony to use hydroponics in lieu of conventional
+farming techniques.
+
+\subsection{Mars-Specific Habitation Models}
+
+\subsubsection{Oxygen Generation}
+
+The distance from Earth to Mars varies between roughly 58 million and 400
+million km. Because of the great distance, resupply capbilities for human
+missions to Mars are virtually nonexistent. Due to this challenge, innovative
+approaches must be taken to regenerate necessary resources in-situ. To this end,
+the Mars Design Reference Architecture 5.0 \cite{drake2010human} proposes
+the use of an ``In-Situ Resource Utilization System'' (ISRU) that converts Mars
+atmosphere into oxygen for both propellant and life support purposes. The plant
+operates by using electrolyzers that convert carbon dioxide into oxygen and
+carbon monoxide, which is then vented. A hydrogen feedstock is brought from
+Earth and reacted with Mars-produced oxygen to generate water. Furthermore,
+carbon dioxide, nitrogen, and argon that are extracted from the atmosphere of
+Mars can be employed as a buffer gas for crew breathing.
+
+\subsubsection{Power Generation}
+
+The lack of known resources on Mars that can be mined for power generation
+requires either a solar-based power source or a power source transported from
+Earth \cite{hoffman1997human}. As noted, Mars is roughly 50\% farther from the
+Sun on average relative to the Earth, so only around half of the solar
+radiation that Earth experiences actually reaches Mars. Thus, the Design
+Reference Architecture \cite{drake2010human} proposes the use of a nuclear
+fission-based reactor. Of the power sources which can be transported from
+Earth, a nuclear power source is the only known option that concentrates
+sufficient energy in a reasonable mass and volume \cite{hoffman1997human}.
+The reactor operates at a low temperature, allowing stainless steel (which is
+compatible with Mars' atmosphere) to be used for reactor components. The ISRU
+plant mentioned previously is a predominant consumer of power (consuming 25 kWe
+when operating continuously).
+
+\subsubsection{Space Agriculture and Waste Processing}
+
+The daily resource requirements of humans have been studied through computer
+simulation \cite{rummel1987modular}. Simulations indicate that a human requires
+(per day) 855g of food inputs, 4577g of drinking/food preparation water, 128g
+of water in food, 18,000g of wash/flush water, and 804g of oxygen for food
+metabolism. In terms of outputs per day, they are separated into three
+categories: water, solids, and carbon dioxide. Humans produce 3025g of water
+in urine and feces, 406g of metabolic water (vapor), 1680g of perspiration
+water (vapor), and 18,000g of wash/flush water. 161g of solids in the form of
+feces, urine, and sweat solids are produced. 1092g of carbon dioxide from
+food metabolization is produced. Over the course of a year, this means that
+the average human is consuming roughly ``three times his body weight in food,
+four times his weight in oxygen, and eight times his weight in drinking water.''
+\cite{modell1980rationale}. Thus, bioregenerative systems are essential to
+sustainable long-term habitation on Mars.
+
+To enable space agriculture, hyper-thermophilic aerobic composting bacteria
+have been studied specifically in the context of habitation on Mars
+\cite{kanazawa2008space}. This technology can be implemented as a subsystem
+that oxidizes inedible biomass/wastes, converting them to fertilizer. High
+quality compost is an important part of a regenerative food production system,
+but as noted, must be implemented carefully to avoid the spread of pathogenic
+bacteria. A ``marsh-based waste processing system'' \cite{nelson1992biosphere}
+has also been studied which exploits the natural ability of aquatic plant/
+microbial associations to perform processing of waste. These systems metabolize,
+or concentrate, pollutants while generating useful biomass growth. Furthermore,
+aquatic plants can be used as purified water sources by condensing moisture
+evapotranspired from plant leaves.
+
+In another study \cite{katayama2005entomophagy}, a menu for a sustainable human
+diet on Mars was developed, concluding that a combination of rice, soybeans,
+sweet potatoes, green-yellow vegetables, silkworm pupa, and loach would fulfill
+human nutritional requirements.
+
+% A description of the simulation you are developing
+\section{Simulation Description}
+\label{sec:simdescrip}
+
+In population dynamics, birth and death rates are often density-dependent
+\cite{guckenheimer1977dynamics}, in that the birth rate eventually decreases as
+population size increases, and the death rate also begins to increase with
+population size due to resource unavailability, environmental deterioration, or
+both. The \textit{logistic growth model} is often used for modeling population
+growth that does not grow without bound. In continuous time, the logistic growth
+equation takes the form of the nonlinear differential equation:
+
+\begin{equation}
+  \frac{dN}{dt} = r\left(1-\frac{N}{K}\right)N
+\end{equation}
+
+where $r$ is the intrinsic growth rate and $K$ is the carrying capacity, or the
+maximum population a species can sustain indefinitely. For our simulation, we
+instead take a discrete-time approach. In discrete time, the logistic model
+takes the form of the difference equation:
+
+\begin{equation}
+  \label{eq:logisticdiff}
+  N_{t+1} = r\left(1-\frac{N_t}{K}\right)N_t
+\end{equation}
+
+We introduce stochasticity to this deterministic framework through the following
+procedure:
+
+%% TODO: fill in
+TODO.
+%% TODO: fill in
+
+We intend to model humans as consumer entities, and several types of resources
+such as food, water, and sanitation availability as resource entities. We take
+a modular approach to the simulation, in which resource entities are modeled as
+independent classes and interacted with through object methods. More
+specifically, during each simulation run we model the availability of these
+resources using a stochastic procedure. As David Quammen notes
+\cite{quammen1996song}, there are four sources of uncertainty to which a
+population may be subject: demographic, environmental, natural catastrophes, and
+genetic. We model the occurrence of several of these to provide enhanced
+realism.
+
+\subsection{Inputs}
+
+\subsection{Outputs}
+
+\subsection{Parameters}
+
+The logistic growth model in Equation \ref{eq:logisticdiff} takes the intrinsic
+growth rate (birth rate minus death rate), carrying capacity of the population,
+and an initial population size.
+
+\subsection{Assumptions \& Simplifications}
+
+% A block diagram (architecture) showing the major pieces of software that
+% will be developed,
 \section{Simulation Architecture}
 \label{sec:architecture}
 
+% Description of data collection completed to date, and software developed, and
 \section{Progress To Date}
 \label{sec:progress}
 
@@ -146,11 +292,18 @@ From a programming perspective, we plan to use the Python programming language,
 which is object-oriented, dynamically typed, and interpreted, making it an
 excellent choice for developing our simulation in an iterative manner.
 
+% A list of tasks and individuals assigned to these tasks in order to
+% complete the project.
 \section{Task Plan}
 \label{sec:taskplan}
 
-\section{Proposal}
-\label{sec:proposal}
+Going forward, tasks for for our team will be divided as follows:
+
+\begin{itemize}
+  \item Chris will be focusing on developing
+  \item Allen will focus on
+  \item Matt's focus is
+\end{itemize}
 
 \clearpage
 \bibliography{template}{}

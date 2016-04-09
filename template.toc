@@ -1,7 +1,16 @@
 \contentsline {section}{\numberline {1}Problem Statement and Approach}{2}{section.1}
-\contentsline {section}{\numberline {2}Simulation Description}{2}{section.2}
-\contentsline {section}{\numberline {3}Related Work}{2}{section.3}
-\contentsline {section}{\numberline {4}Simulation Architecture}{4}{section.4}
-\contentsline {section}{\numberline {5}Progress To Date}{4}{section.5}
-\contentsline {section}{\numberline {6}Task Plan}{4}{section.6}
-\contentsline {section}{\numberline {7}Proposal}{4}{section.7}
+\contentsline {section}{\numberline {2}Related Work}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Population Growth Models}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Food Production}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Mars-Specific Habitation Models}{4}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Oxygen Generation}{4}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Power Generation}{4}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Space Agriculture and Waste Processing}{5}{subsubsection.2.3.3}
+\contentsline {section}{\numberline {3}Simulation Description}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Inputs}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Outputs}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Parameters}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Assumptions \& Simplifications}{7}{subsection.3.4}
+\contentsline {section}{\numberline {4}Simulation Architecture}{7}{section.4}
+\contentsline {section}{\numberline {5}Progress To Date}{7}{section.5}
+\contentsline {section}{\numberline {6}Task Plan}{7}{section.6}

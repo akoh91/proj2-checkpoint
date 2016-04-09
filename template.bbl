@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{aikio2003relatedness}
+Sami Aikio and Susanna Pakkasmaa.
+\newblock Relatedness and competitive asymmetry--implications for growth and
+  population dynamics.
+\newblock {\em Oikos}, 100(2):283--290, 2003.
+
 \bibitem{audesirk1996biology}
 Teresa Audesirk, Gerald Audesirk, and Bruce~E Byers.
 \newblock {\em Biology: life on earth}.
@@ -20,12 +26,23 @@ Colin Clark et~al.
 \newblock {\em Population growth and land use}.
 \newblock London: MacMillan., 1967.
 
+\bibitem{clark1982forage}
+William~R Clark and George~S Innis.
+\newblock Forage interactions and black-tailed jack rabbit population dynamics:
+  a simulation model.
+\newblock {\em The Journal of Wildlife Management}, pages 1018--1035, 1982.
+
 \bibitem{iHeartHydroponics}
 Ricardo~M. Correa, Jose Eduardo~B. Pinto, Cesar Augusto Brasil~Pereira Pinto,
   Valdemar Faquin, Erika~S. Reis, Aline~B. Monteiro, and Willian~E. Dyer.
 \newblock A comparison of potato seed tuber yields in beds, pots, and
   hydroponic systems.
 \newblock {\em Scientia Horticulturae}, 116(1):17--20, 2008.
+
+\bibitem{drake2010human}
+Bret~G Drake, Stephen~J Hoffman, and David~W Beaty.
+\newblock Human exploration of mars, design reference architecture 5.0.
+\newblock In {\em Aerospace Conference, 2010 IEEE}, pages 1--24. IEEE, 2010.
 
 \bibitem{ehrlich1971impact}
 Paul~R Ehrlich, John~P Holdren, et~al.
@@ -49,6 +66,30 @@ Food and Agriculture~Organization of~the United Nations~(FAO).
 \newblock \url{http://faostat.fao.org/site/368/default.aspx}, 2011.
 \newblock Accessed: 2016-04-04.
 
+\bibitem{guckenheimer1977dynamics}
+John Guckenheimer, George Oster, and Ai~Ipaktchi.
+\newblock The dynamics of density dependent population models.
+\newblock {\em Journal of Mathematical Biology}, 4(2):101--147, 1977.
+
+\bibitem{hoffman1997human}
+Stephen~J Hoffman and David~I Kaplan.
+\newblock Human exploration of mars: the reference mission of the nasa mars
+  exploration study team.
+\newblock 1997.
+
+\bibitem{kanazawa2008space}
+S~Kanazawa, Y~Ishikawa, K~Tomita-Yokotani, H~Hashimoto, Y~Kitaya, M~Yamashita,
+  M~Nagatomo, T~Oshima, H~Wada, and Space Agriculture~Task Force.
+\newblock Space agriculture for habitation on mars with hyper-thermophilic
+  aerobic composting bacteria.
+\newblock {\em Advances in Space Research}, 41(5):696--700, 2008.
+
+\bibitem{katayama2005entomophagy}
+Naomi Katayama, Masamichi Yamashita, Hidenori Wada, and Jun Mitsuhashi.
+\newblock Entomophagy as part of a space diet for habitation on mars.
+\newblock {\em The Journal of Space Technology and Science},
+  21(2):2\_27--2\_38, 2005.
+
 \bibitem{meadows1992beyond}
 Donella~H Meadows, Dennis~L Meadows, J{\o}rgen Randers, et~al.
 \newblock {\em Beyond the limits: global collapse or a sustainable future.}
@@ -59,14 +100,41 @@ James~R. Mihelcic, Lauren~M Fry, and Ryan Shaw.
 \newblock Global potential of phosphorus recovery from human urine and feces.
 \newblock {\em Chemosphere}, 84, 2011.
 
+\bibitem{miller2002density}
+David~H Miller, Al~L Jensen, and James~H Hammill.
+\newblock Density dependent matrix model for gray wolf population projection.
+\newblock {\em Ecological Modelling}, 151(2):271--278, 2002.
+
+\bibitem{modell1980rationale}
+M~Modell and JM~Spurlock.
+\newblock Rationale for evaluating a closed food chain for space habitats.
+\newblock 1980.
+
 \bibitem{moore2001evaluating}
 John~H Moore.
 \newblock Evaluating five models of human colonization.
 \newblock {\em American Anthropologist}, 103(2):395--408, 2001.
 
+\bibitem{nelson1992biosphere}
+Mark Nelson, John~P Allen, and William~F Dempster.
+\newblock Biosphere 2: a prototype project for a permanent and evolving life
+  system for mars base.
+\newblock {\em Advances in Space Research}, 12(5):211--217, 1992.
+
+\bibitem{peterson2014modeling}
+Randy~L Peterson, Jingjing Liang, and Tara~M Barrett.
+\newblock Modeling population dynamics and woody biomass in alaska coastal
+  forest.
+\newblock {\em Forest Science}, 60(2):391--401, 2014.
+
 \bibitem{quammen1996song}
 David Quammen.
 \newblock The song of the dodo: island biogeography in an age of extinction.
 \newblock {\em Hutchinson, London}, 1996.
+
+\bibitem{rummel1987modular}
+John~D Rummel and Tyler Volk.
+\newblock A modular blss simulation model.
+\newblock {\em Advances in space research}, 7(4):59--67, 1987.
 
 \end{thebibliography}
