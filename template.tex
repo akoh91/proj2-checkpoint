@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{multirow}
+\usepackage{scrextend}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage[colorlinks]{hyperref}
 \usepackage{epstopdf}
@@ -232,33 +233,50 @@ population size increases, and the death rate also begins to increase with
 population size due to resource unavailability, environmental deterioration, or
 both. The \textit{logistic growth model} is often used for modeling population
 growth that does not grow without bound. In continuous time, the logistic growth
-equation takes the form:
+equation takes the form of the nonlinear differential equation:
 
 \begin{equation}
   \frac{dN}{dt} = r\left(1-\frac{N}{K}\right)N
 \end{equation}
 
-where $r$ is the intrinsic growth rate, which can be understood as the birth
-rate minus the death rate, and $K$ is the carrying capacity, or the maximum
-population a species can sustain indefinitely. For purposes of our simulation,
-we introduce stochasticity to this deterministic framework through the following
-procedure previously noted in \cite{fugotakasu}.
+where $r$ is the intrinsic growth rate and $K$ is the carrying capacity, or the
+maximum population a species can sustain indefinitely. For our simulation, we
+instead take a discrete-time approach. In discrete time, the logistic model
+takes the form of the difference equation:
 
-% procedure
+\begin{equation}
+  \label{eq:logisticdiff}
+  N_{t+1} = r\left(1-\frac{N_t}{K}\right)N_t
+\end{equation}
 
-We intend to model humans as consumer entities, and several
-types of resources such as food, water, and sanitation availability as resource
-entities. We intend to take a stochastic, discrete-time approach. As David
-Quammen notes \cite{quammen1996song}, there are four sources of uncertainty to
-which a population may be subject: demographic, environmental, natural
-catastrophes, and genetic. We will attempt to model several of these to
-provide the greatest realism possible.
+We introduce stochasticity to this deterministic framework through the following
+procedure:
+
+%% TODO: fill in
+TODO.
+%% TODO: fill in
+
+We intend to model humans as consumer entities, and several types of resources
+such as food, water, and sanitation availability as resource entities. We take
+a modular approach to the simulation, in which resource entities are modeled as
+independent classes and interacted with through object methods. More
+specifically, during each simulation run we model the availability of these
+resources using a stochastic procedure. As David Quammen notes
+\cite{quammen1996song}, there are four sources of uncertainty to which a
+population may be subject: demographic, environmental, natural catastrophes, and
+genetic. We model the occurrence of several of these to provide enhanced
+realism.
 
 \subsection{Inputs}
 
 \subsection{Outputs}
+
 \subsection{Parameters}
-\subsection{Content}
+
+The logistic growth model in Equation \ref{eq:logisticdiff} takes the intrinsic
+growth rate (birth rate minus death rate), carrying capacity of the population,
+and an initial population size.
+
 \subsection{Assumptions \& Simplifications}
 
 % A block diagram (architecture) showing the major pieces of software that

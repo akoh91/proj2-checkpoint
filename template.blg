@@ -6,45 +6,45 @@ Database file #1: template.bib
 Warning--empty journal in faoNutrition
 Warning--empty journal in hoffman1997human
 Warning--empty journal in modell1980rationale
-You've used 26 entries,
+You've used 25 entries,
             2118 wiz_defined-function locations,
-            663 strings with 8448 characters,
-and the built_in function-call counts, 8665 in all, are:
-= -- 838
-> -- 464
+            657 strings with 8293 characters,
+and the built_in function-call counts, 8448 in all, are:
+= -- 816
+> -- 457
 < -- 2
-+ -- 186
-- -- 156
-* -- 627
-:= -- 1486
-add.period$ -- 81
-call.type$ -- 26
-change.case$ -- 149
++ -- 183
+- -- 154
+* -- 621
+:= -- 1449
+add.period$ -- 77
+call.type$ -- 25
+change.case$ -- 145
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 296
-empty$ -- 639
-format.name$ -- 156
-if$ -- 1763
+cite$ -- 28
+duplicate$ -- 289
+empty$ -- 617
+format.name$ -- 154
+if$ -- 1715
 int.to.chr$ -- 0
-int.to.str$ -- 26
+int.to.str$ -- 25
 missing$ -- 28
-newline$ -- 135
-num.names$ -- 52
-pop$ -- 158
+newline$ -- 129
+num.names$ -- 50
+pop$ -- 150
 preamble$ -- 1
-purify$ -- 127
+purify$ -- 124
 quote$ -- 0
-skip$ -- 207
+skip$ -- 201
 stack$ -- 0
-substring$ -- 503
-swap$ -- 40
+substring$ -- 498
+swap$ -- 39
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 96
+type$ -- 92
 warning$ -- 3
-while$ -- 81
-width$ -- 28
-write$ -- 280
+while$ -- 79
+width$ -- 27
+write$ -- 268
 (There were 3 warnings)

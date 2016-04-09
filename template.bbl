@@ -137,12 +137,4 @@ John~D Rummel and Tyler Volk.
 \newblock A modular blss simulation model.
 \newblock {\em Advances in space research}, 7(4):59--67, 1987.
 
-\bibitem{fugotakasu}
-Fugo Takasu.
-\newblock Logistic growth models.
-\newblock
-  \url{http://gi.ics.nara-wu.ac.jp/~takasu/lecture/graduate_course/L9_logistic-growth.pdf},
-  2009.
-\newblock Accessed: 2016-04-07.
-
 \end{thebibliography}
