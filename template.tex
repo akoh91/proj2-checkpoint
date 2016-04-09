@@ -228,8 +228,8 @@ human nutritional requirements.
 \label{sec:simdescrip}
 
 In population dynamics, birth and death rates are often density-dependent
-\cite{guckenheimer1977dynamics}, in that the birth rate eventually decreases as
-population size increases, and the death rate also begins to increase with
+\cite{guckenheimer1977dynamics}. The birth rate eventually decreases as
+population size increases, and the death rate begins to increase with
 population size due to resource unavailability, environmental deterioration, or
 both. The \textit{logistic growth model} is often used for modeling population
 growth that does not grow without bound. In continuous time, the logistic growth
@@ -252,9 +252,7 @@ takes the form of the difference equation:
 We introduce stochasticity to this deterministic framework through the following
 procedure:
 
-%% TODO: fill in
-TODO.
-%% TODO: fill in
+Several simulation properties will be determined through distributions and a stochastic process (random number generator) will be used to select from the distribution.  Properties such as whether a natural disaster will occur and the size of the damage will be determined stochastically to introduce randomness to the simulation.  Death via natural causes for any human will also be determined stochastically for any given timestep.  Another way stochasticity will be introduced will be determining what gender and size a newborn human will be.  This can be selected stochastically from a distribution and will define the amount of resources necessary to sustain the human over its lifetime.
 
 We intend to model humans as consumer entities, and several types of resources
 such as food, water, and sanitation availability as resource entities. We take
@@ -268,16 +266,23 @@ genetic. We model the occurrence of several of these to provide enhanced
 realism.
 
 \subsection{Inputs}
+The simulation will be a discrete, time-stepped simulation with several inputs regarding population and food resources. For each iteration, the current population size will be taken to determine the intrinsic growth rate which can be either calculated with a given equation or taken from an empirical distribution where the distribution changes for each subset of population size.  The second input is the amount of food resources which will determine the number of people to be fed and also the growth of food for the next iteration.  The third input to the iteration will be natural disasters. The occurrence of a natural disaster event will be determined by a stochastic process with a given distribution.  The size of the disaster will also be determined by a distribution and will determine the population size and number of food resources to be lost.
 
 \subsection{Outputs}
+There will be several outputs to the simulation.  As the main objective is to simulate population growth, one output will be the size of the population at a given timestep.  This number must be greater than zero for the population to be sustained and will determine the population growth inputs for the next iteration.  The amount of food resources will also be an output as this will determine how many people will receive food during the next iteration.
+
+In terms of measuring the overall output of whether population growth was successful, measuring the difference in population size per iteration will not be suitable as there may be fluctuations in size as the overall population may grow over time (oscillatory behavior). One way to determine population growth regardless of oscillatory behavior would be to target a population size and deem the simulation successful if that size is maintained for a defined number of timesteps.
 
 \subsection{Parameters}
 
+The main parameters revolve around growth calculations and initial sizes.
 The logistic growth model in Equation \ref{eq:logisticdiff} takes the intrinsic
 growth rate (birth rate minus death rate), carrying capacity of the population,
-and an initial population size.
+and an initial population size.  The growth of food resources and initial amount of food available will be another input parameter to the simulation.  
 
 \subsection{Assumptions \& Simplifications}
+Many assumptions and simplifications are made to the simulation due to time constraints and to allow for feasible implementation.
+  
 
 % A block diagram (architecture) showing the major pieces of software that
 % will be developed,
